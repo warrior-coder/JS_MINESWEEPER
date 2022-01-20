@@ -1,0 +1,160 @@
+@font-face { 
+    font-family: 'PixelTimes'; 
+    src: url('data/PixelTimes.ttf')  format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+BODY {
+    margin: 0;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+#mainCanvas {
+    position: absolute;
+    background-color: silver;
+    border: gray 5px solid;
+}
+#scoreBoard {
+    position: absolute;
+    background-color: silver;
+    border: gray 5px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+}  
+.scoreBoardFont {
+    background-color: black;
+    color: red;
+    padding: 0;
+
+    font-weight: bold;
+    font-family: 'PixelTimes', Arial, sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scoreBoardSmile {
+    background-color: yellow;
+    
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+#winBoard {
+    position: fixed;
+    width: 100%;
+    left:0;
+
+    background-color: red;
+    color: black;
+    opacity: .4;
+
+    font-family: Arial;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+.CR_box {
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+#CR {
+    position: absolute;
+
+    font-family: Arial;
+    font-weight: bold;
+
+    background: linear-gradient(45deg, deeppink, yellow, lime);
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.4), -5px -10px 20px rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+.infoBoard {
+    position: absolute;
+
+    font-family: Arial;
+    font-weight: bold;
+
+    background-color: gray;
+    color: silver;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+.flagBoard {
+    position: fixed;
+
+    z-index: 999;
+
+    left: 0;
+    background-color: #646464;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flagCircle {
+    position: relative;
+    cursor: pointer;
+    background-color: red;
+}
+.flag1 {
+    position: absolute;
+
+    width: 50%;
+    height: 7%;
+    left:25%;
+    bottom:10%;
+
+    background-color: darkred;
+} 
+.flag2 {
+    position: absolute;
+
+    width: 7%;
+    height: 83%;
+    left:45%;
+    bottom:10%;
+
+    background-color: darkred;
+} 
+.flag3 {
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    left:52%;
+    top:7%;
+
+    border-style: solid;
+    border-top-color:rgba(0, 0, 0, 0);
+    border-right-color:rgba(0, 0, 0, 0);
+    border-left-color: darkred;
+    border-bottom-color:rgba(0, 0, 0, 0);
+    
+    background-color:rgba(0, 0, 0, 0);
+} 
